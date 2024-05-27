@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ca60d0e-b889-4d40-b472-85d1b0712874" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Project_MACD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Przetwarzanie_rozproszone/lab_1/.idea/lab_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Przetwarzanie_rozproszone/weird_hash_structure/.idea/laboratory_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Sztuczna_Inteligencja/lab1/.idea/lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Sztuczna_Inteligencja/lab2/.idea/lab2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/.idea/laboratory_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-5012bce1f3a3a2998405.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-cb1e59403ab09cc90ccb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-0b7b784c2fdf5a07ebdd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-02T10-51-30-0734.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/target-laboratory_1-Debug-47a1bbf3605cd2407739.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-4b3d98257768d7b3d977.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/laboratory_1.dir/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/cmake-build-debug/laboratory_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Przetwarzanie rozproszone/laboratory_1/main.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../System operacyjny MAC OS X i IOS/laboratory_1.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../System operacyjny MAC OS X i IOS/laboratory_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/lab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/for_students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sztuczna Inteligencja/lab1/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2eB4qcREegTMcJyCembrXZvSp6D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Project_MACD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ca60d0e-b889-4d40-b472-85d1b0712874" name="Changes" comment="" />
+      <created>1711364828838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711364828838</updated>
+      <workItem from="1711364832175" duration="418000" />
+      <workItem from="1711365579767" duration="1593000" />
+      <workItem from="1711367193246" duration="2470000" />
+      <workItem from="1711369737001" duration="6053000" />
+      <workItem from="1711376987129" duration="184000" />
+      <workItem from="1711378165779" duration="134000" />
+      <workItem from="1711448732125" duration="1005000" />
+      <workItem from="1711577244274" duration="188000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_MACD$main.coverage" NAME="main Coverage Results" MODIFIED="1711376468690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -1,0 +1,7 @@
+Obserwacje:
+
+Operacje wykonywane są na znacznie większych macierzach niż w przypadku poprzednich zadań: rozmiar macierzy A wynosi 20000x20000, a macierzy b to 20000. Norma błędu rezydualnego w przypadku rozwiązania bezpośredniego jest bardzo mała, wynosi 6.887363656415422e-13. Z kolei dla rozwiązań iteracyjnych norma wyraźnie wzrasta, osiąga wartości odpowiednio 6.436734796339114e+10 dla algorytmu Gaussa-Seidela oraz NaN dla Jacobiego. Czas rozwiązania jest dosyć podobny dla metody bezpośredniej i metody Jacobiego: odpowiednio około 0.21s oraz 0.49s. Natomiast w przypadku Gaussa-Seigela znacząco on wzrasta: osiąga około 75s. 
+
+Wnioski:
+
+Jak widać, dla macierzy dużych rozmiarów metody iteracyjne nie są tak efektywne jak metoda bezpośrednia. Norma błędu rezydualnego jest znacznie większa, co oznacza, że rozwiązanie równania macierzowego będzie bardziej odbiegało od optymalnego rozwiązania. Czas rozwiązania też przemawia na korzyść rozwiązania bezpośredniego, szczególnie w porównaniu do metody Gaussa-Seigela. Taka rozbieżność zależy od wartości wewnątrz macierzy. Przykładowo: stopień dominacji diagonali wpływa na szybkość zbieżności metody Jacobiego. Metody iteracyjne nie zbiegają się ani w przypadku czasu, ani w przypadku normy błędu.
