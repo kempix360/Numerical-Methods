@@ -67,6 +67,7 @@ def generate_interpolation_lagrange(x_values, y_values, n, title, _type):
     y_interpolated = lagrange_interpolation(nodes_x, nodes_y, x_values)
     generate_lagrange_plot(x_values, y_values, nodes_x, nodes_y, y_interpolated, title, _type)
 
+
 def generate_cubic_spline_interpolation(x_values, y_values, n, title):
     nodes_indices = linspace(0, len(x_values) - 1, n)
     nodes_indices = round_to_int(nodes_indices)
@@ -78,20 +79,20 @@ def generate_cubic_spline_interpolation(x_values, y_values, n, title):
 
 
 if __name__ == '__main__':
-    x_values, y_values = getdata("data", "ulm_lugano.txt")
-    generate_original_data(x_values, y_values, 'ulm_lugano')
+    x_values, y_values = getdata("data", "glebia_challengera.txt")
+    generate_original_data(x_values, y_values, 'glebia_challengera')
 
-    generate_interpolation_lagrange(x_values, y_values, 15, 'ulm_lugano', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 40, 'ulm_lugano', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 80, 'ulm_lugano', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 120, 'ulm_lugano', 'normal')
+    generate_interpolation_lagrange(x_values, y_values, 15, 'glebia_challengera', 'normal')
+    generate_interpolation_lagrange(x_values, y_values, 40, 'glebia_challengera', 'normal')
+    generate_interpolation_lagrange(x_values, y_values, 80, 'glebia_challengera', 'normal')
+    generate_interpolation_lagrange(x_values, y_values, 120, 'glebia_challengera', 'normal')
 
-    generate_interpolation_lagrange(x_values, y_values, 15, 'ulm_lugano', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 40, 'ulm_lugano', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 80, 'ulm_lugano', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 120, 'ulm_lugano', 'chebyshev')
+    generate_interpolation_lagrange(x_values, y_values, 15, 'glebia_challengera', 'chebyshev')
+    generate_interpolation_lagrange(x_values, y_values, 40, 'glebia_challengera', 'chebyshev')
+    generate_interpolation_lagrange(x_values, y_values, 80, 'glebia_challengera', 'chebyshev')
+    generate_interpolation_lagrange(x_values, y_values, 120, 'glebia_challengera', 'chebyshev')
 
-    generate_cubic_spline_interpolation(x_values, y_values, 15, 'ulm_lugano')
-    generate_cubic_spline_interpolation(x_values, y_values, 40, 'ulm_lugano')
-    generate_cubic_spline_interpolation(x_values, y_values, 80, 'ulm_lugano')
-    generate_cubic_spline_interpolation(x_values, y_values, 120, 'ulm_lugano')
+    generate_cubic_spline_interpolation(x_values, y_values, 15, 'glebia_challengera')
+    generate_cubic_spline_interpolation(x_values, y_values, 40, 'glebia_challengera')
+    generate_cubic_spline_interpolation(x_values, y_values, 80, 'glebia_challengera')
+    generate_cubic_spline_interpolation(x_values, y_values, 120, 'glebia_challengera')

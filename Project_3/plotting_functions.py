@@ -30,7 +30,6 @@ def generate_lagrange_plot(x, y, nodes_x, nodes_y, y_interpolated, terrain, _typ
     # plot the selected nodes
     plt.scatter(nodes_x, nodes_y, label='selected nodes', color='red', s=10, zorder=2)
 
-    plt.yscale('log')
     plt.legend()
     plt.xlabel('Distance')
     plt.ylabel('Height')
@@ -58,7 +57,6 @@ def generate_cubic_spline_plot(x, y, nodes_x, nodes_y, y_interpolated, terrain):
     # plot the selected nodes
     plt.scatter(nodes_x, nodes_y, label='selected nodes', color='red', s=10, zorder=2)
 
-    plt.yscale('log')
     plt.legend()
     plt.xlabel('Distance')
     plt.ylabel('Height')

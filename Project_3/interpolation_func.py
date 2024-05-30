@@ -1,4 +1,5 @@
-
+######################################
+# cubic spline interpolation functions
 
 def cubic_spline_interpolation(x_values, y_values, x_points):
 
@@ -77,6 +78,9 @@ def construct_tridiagonal_matrix(x_values, y_values):
 
     return A, b
 
+
+#################################
+# Lagrange interpolation function
 
 def lagrange_interpolation(nodes_x, nodes_y, x_values):
     y_interpolated = []
