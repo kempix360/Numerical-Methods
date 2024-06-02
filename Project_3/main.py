@@ -1,5 +1,4 @@
 from cmath import cos, pi
-import numpy as np
 from plotting_functions import *
 from interpolation_func import *
 
@@ -25,17 +24,21 @@ def chebyshev_nodes(start, end, n):
     """
     Returns a list of n Chebyshev nodes between start and end.
     """
-    nodes = []
-    for k in range(n):
-        cos_value = cos((2 * k + 1) * pi / (2 * n))
-        node = start + 0.5 * (end - start) * (1 + cos_value)
-        nodes.append(node)
-    return nodes
+    return [(start + end) / 2 + (end - start) / 2 * cos((2 * i + 1) * pi / (2 * n)) for i in range(n)][::-1]
+
+
+def get_selection_points(selected_values, nodes):
+    # Find the closest nodes to correct_nodes from nodes.
+    result = []
+    for point in selected_values:
+        closest_point = min(nodes, key=lambda node: abs(node[0] - point))
+        result.append(closest_point)
+            
+    return result
 
 
 def getdata(directory, file_name):
-    x = []
-    y = []
+    nodes = []
 
     # Construct the full file path
     file_path = os.path.join(directory, file_name)
@@ -46,53 +49,47 @@ def getdata(directory, file_name):
             line = file.readline()
             if not line:
                 break  # Exit loop if no more lines
-            distance, height = line.strip().split(' ')
-            x.append(float(distance))
-            y.append(float(height))
+            distance, height = map(float, line.strip().split(' '))
+            nodes.append((distance, height))
 
-    return x, y
+    return nodes
 
 
-def generate_interpolation_lagrange(x_values, y_values, n, title, _type):
-    nodes_indices = []
+def generate_interpolation_lagrange(nodes, n, title, _type):
+    selected_points = []
     if _type == 'normal':
-        nodes_indices = linspace(0, len(x_values) - 1, n)
-        nodes_indices = round_to_int(nodes_indices)
+        selection = linspace(nodes[0][0], nodes[-1][0], n)
+        selected_points = get_selection_points(selection, nodes)
     elif _type == 'chebyshev':
-        nodes_indices = chebyshev_nodes(0, len(x_values) - 1, n)
-        nodes_indices = np.round(nodes_indices).astype(int)
+        selection = chebyshev_nodes(nodes[0][0], nodes[-1][0], n)
+        selected_points = get_selection_points(selection, nodes)
 
-    nodes_x = [x_values[i] for i in nodes_indices]
-    nodes_y = [y_values[i] for i in nodes_indices]
-    y_interpolated = lagrange_interpolation(nodes_x, nodes_y, x_values)
-    generate_lagrange_plot(x_values, y_values, nodes_x, nodes_y, y_interpolated, title, _type)
+    y_interpolated = lagrange_interpolation(selected_points, nodes)
+    generate_lagrange_plot(nodes, selected_points, y_interpolated, title, _type)
 
 
-def generate_cubic_spline_interpolation(x_values, y_values, n, title):
-    nodes_indices = linspace(0, len(x_values) - 1, n)
-    nodes_indices = round_to_int(nodes_indices)
+def generate_cubic_spline_interpolation(nodes, n, title):
+    selection = linspace(nodes[0][0], nodes[-1][0], n)
+    selected_points = get_selection_points(selection, nodes)
 
-    nodes_x = [x_values[i] for i in nodes_indices]
-    nodes_y = [y_values[i] for i in nodes_indices]
-    y_interpolated = cubic_spline_interpolation(nodes_x, nodes_y, x_values)
-    generate_cubic_spline_plot(x_values, y_values, nodes_x, nodes_y, y_interpolated, title)
+    y_interpolated = cubic_spline_interpolation(selected_points, nodes)
+    generate_cubic_spline_plot(nodes, selected_points, y_interpolated, title)
 
 
 if __name__ == '__main__':
-    x_values, y_values = getdata("data", "glebia_challengera.txt")
-    generate_original_data(x_values, y_values, 'glebia_challengera')
+    nodes = getdata("data", "ulm_lugano.txt")
+    # generate_original_data(nodes, 'chelm')
 
-    generate_interpolation_lagrange(x_values, y_values, 15, 'glebia_challengera', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 40, 'glebia_challengera', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 80, 'glebia_challengera', 'normal')
-    generate_interpolation_lagrange(x_values, y_values, 120, 'glebia_challengera', 'normal')
+    generate_interpolation_lagrange(nodes, 110, 'ulm_lugano', 'normal')
+    # generate_interpolation_lagrange(nodes, 10, 'chelm', 'normal')
+    # generate_interpolation_lagrange(nodes, 20, 'chelm', 'normal')
+    # generate_interpolation_lagrange(nodes, 120, 'chelm', 'normal')
 
-    generate_interpolation_lagrange(x_values, y_values, 15, 'glebia_challengera', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 40, 'glebia_challengera', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 80, 'glebia_challengera', 'chebyshev')
-    generate_interpolation_lagrange(x_values, y_values, 120, 'glebia_challengera', 'chebyshev')
+    generate_interpolation_lagrange(nodes, 110, 'ulm_lugano', 'chebyshev')
+    # generate_interpolation_lagrange(nodes, 60, 'chelm', 'chebyshev')
+    # generate_interpolation_lagrange(nodes, 50, 'chelm', 'chebyshev')
 
-    generate_cubic_spline_interpolation(x_values, y_values, 15, 'glebia_challengera')
-    generate_cubic_spline_interpolation(x_values, y_values, 40, 'glebia_challengera')
-    generate_cubic_spline_interpolation(x_values, y_values, 80, 'glebia_challengera')
-    generate_cubic_spline_interpolation(x_values, y_values, 120, 'glebia_challengera')
+    generate_cubic_spline_interpolation(nodes, 110, 'ulm_lugano')
+    # generate_cubic_spline_interpolation(nodes, 40, 'chelm')
+    # generate_cubic_spline_interpolation(nodes, 80, 'chelm')
+    # generate_cubic_spline_interpolation(nodes, 120, 'chelm')

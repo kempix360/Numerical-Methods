@@ -1,39 +1,43 @@
 ######################################
 # cubic spline interpolation functions
 
-def cubic_spline_interpolation(x_values, y_values, x_points):
+def cubic_spline_interpolation(selected_points, nodes):
+    x_values = [node[0] for node in nodes]
 
-    A, b = construct_tridiagonal_matrix(x_values, y_values)
+    x_points = [point[0] for point in selected_points]
+    y_points = [point[1] for point in selected_points]
+
+    A, b = construct_tridiagonal_matrix(selected_points)
 
     # Solve the tridiagonal system to find m (second derivatives)
     m = solve_tridiagonal(A, b)
 
     # Calculate differences between x values
-    h = [x_values[i + 1] - x_values[i] for i in range(len(x_values) - 1)]
+    h = [x_points[i + 1] - x_points[i] for i in range(len(x_points) - 1)]
 
     # Calculate differences between y values
-    delta = [y_values[i + 1] - y_values[i] for i in range(len(y_values) - 1)]
+    delta = [y_points[i + 1] - y_points[i] for i in range(len(y_points) - 1)]
 
     # Number of points
-    n = len(x_values)
+    n = len(x_points)
 
     # Calculate coefficients of cubic polynomials
-    a = y_values[:-1]
+    a = y_points[:-1]
     b = [(delta[i] / h[i]) - h[i] * (2 * m[i] + m[i + 1]) / 6 for i in range(n - 1)]
     c = [m[i] / 2 for i in range(n - 1)]
     d = [(m[i + 1] - m[i]) / (6 * h[i]) for i in range(n - 1)]
 
     # Initialize array for interpolated y values
-    y_interpolated = [0.0] * len(x_points)
+    y_interpolated = [0.0] * len(x_values)
 
     # Interpolate y values using cubic polynomials
-    for i in range(len(x_values) - 1):
-        for j, x in enumerate(x_points):
-            if x_values[i] <= x <= x_values[i + 1]:
+    for i in range(len(x_points) - 1):
+        for j, x in enumerate(x_values):
+            if x_points[i] <= x <= x_points[i + 1]:
                 y_interpolated[j] = (a[i] +
-                                     b[i] * (x - x_values[i]) +
-                                     c[i] * (x - x_values[i]) ** 2 +
-                                     d[i] * (x - x_values[i]) ** 3)
+                                     b[i] * (x - x_points[i]) +
+                                     c[i] * (x - x_points[i]) ** 2 +
+                                     d[i] * (x - x_points[i]) ** 3)
 
     return y_interpolated
 
@@ -53,7 +57,10 @@ def solve_tridiagonal(A, B):
     return m
 
 
-def construct_tridiagonal_matrix(x_values, y_values):
+def construct_tridiagonal_matrix(nodes):
+    x_values = [node[0] for node in nodes]
+    y_values = [node[1] for node in nodes]
+
     # Calculate differences between x values
     h = [x_values[i + 1] - x_values[i] for i in range(len(x_values) - 1)]
 
@@ -82,17 +89,20 @@ def construct_tridiagonal_matrix(x_values, y_values):
 #################################
 # Lagrange interpolation function
 
-def lagrange_interpolation(nodes_x, nodes_y, x_values):
+def lagrange_interpolation(selected_points, nodes):
     y_interpolated = []
+    x_values = [node[0] for node in nodes]
+
+    x_points = [point[0] for point in selected_points]
+    y_points = [point[1] for point in selected_points]
     for x in x_values:
         y = 0.0
-        for i, yi in enumerate(nodes_y):
+        for i, yi in enumerate(y_points):
             term = yi
-            xi = nodes_x[i]
-            for j, xj in enumerate(nodes_x):
+            xi = x_points[i]
+            for j, xj in enumerate(x_points):
                 if j != i and xi != xj:
                     term *= (x - xj) / (xi - xj)
             y += term
         y_interpolated.append(y)
-
     return y_interpolated
